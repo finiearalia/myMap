@@ -13,6 +13,22 @@
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
+     <!-- Tambahkan Dropdown Basemap di sini -->
+  <ion-item>
+    <ion-label>Pilih Basemap:</ion-label>
+    <ion-select (ionChange)="changeBasemap($event)">
+      <ion-select-option value="topo-vector">Topographic</ion-select-option>
+      <ion-select-option value="streets">Streets</ion-select-option>
+      <ion-select-option value="satellite">Satellite</ion-select-option>
+      <ion-select-option value="hybrid">Hybrid</ion-select-option>
+      <ion-select-option value="terrain">Terrain</ion-select-option>
+      <ion-select-option value="dark-gray">Dark Gray</ion-select-option>
+      <ion-select-option value="gray">Light Gray</ion-select-option>
+      <ion-select-option value="osm">OpenStreetMap</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+
+  <div id="container" style="width: 100%; height: 80vh;">
   </div>
 </ion-content>
